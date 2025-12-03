@@ -20,7 +20,7 @@ file:close()
 
 local password = 0
 
-print("The 'Password' is \"" .. password .. "\"")
+print("The 'Password' is \"" .. string.format("%.f", password) .. "\"")
 
 print("\nEnd of Programm")
 
