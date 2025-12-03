@@ -67,7 +67,7 @@ local function SeperateIDPair(full_id)
 end
 
 ---Checks if supplied ID is valid or not
----@param id any -- 
+---@param id string|number 
 ---@return boolean
 local function CheckID(id)
     dprint("checking id: " .. id)
@@ -143,8 +143,9 @@ for _, id in pairs(ids) do
     end
 end
 
-
-
 file:close()
 print("The Sum of all invalid IDs is \"" .. solution .. "\"")
 print("\nEnd of Programm")
+
+local end_time = os.time()
+print("Programm took " .. os.difftime(end_time, start_time) .. " seconds to execute")
