@@ -3,8 +3,6 @@
     "[lua]": {
         "editor.defaultFormatter": "JohnnyMorganz.stylua"
     },
-    "Lua.diagnostics.globals": [
-        "love"
-    ],
+    "Lua.diagnostics.enable": true,
     "stylua.targetReleaseVersion": "latest",
 }
